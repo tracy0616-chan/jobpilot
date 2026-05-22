@@ -1860,13 +1860,11 @@ function SelectField({
           compact ? 'py-3' : 'py-3'
         }`}
       >
-        {safeOptions.map((option) => {
-          return (
-            <option key={option.value} value={option.value}>
-              {option.label}
-            </option>
-          )
-        })}
+        {safeOptions.map((option) => (
+          <option key={option.value} value={option.value}>
+            {option.label}
+          </option>
+        ))}
       </select>
     </label>
   )
@@ -2134,6 +2132,14 @@ function App() {
             </div>
 
             <div className="grid gap-3 sm:grid-cols-2 xl:w-[420px]">
+              <a
+                href="https://v.wjx.cn/vm/wMEyNEJ.aspx"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-2xl border border-sky-200 bg-sky-50/80 px-4 py-4 text-sm font-semibold text-sky-700 transition hover:border-sky-300 hover:bg-sky-100/70"
+              >
+                提交试用反馈
+              </a>
               <div className="rounded-2xl border border-sky-100 bg-sky-50/70 px-4 py-4">
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-sky-600">
                   Current Stage
@@ -2195,7 +2201,6 @@ function App() {
             onFilterChange={setCompensationFilters}
           />
         ) : null}
-
       </section>
     </Layout>
   )

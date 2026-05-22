@@ -59,6 +59,19 @@ export function Sidebar({ activePage, onNavigate }: SidebarProps) {
         })}
       </nav>
 
+      <a
+        href="https://v.wjx.cn/vm/wMEyNEJ.aspx"
+        target="_blank"
+        rel="noreferrer"
+        className="mt-4 rounded-[24px] border border-sky-100 bg-sky-50/90 p-5 shadow-sm transition hover:border-sky-200 hover:bg-sky-100/70"
+      >
+        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-sky-600">Feedback</p>
+        <p className="mt-3 text-sm font-semibold text-slate-900">试用反馈</p>
+        <p className="mt-2 text-sm leading-7 text-slate-600">
+          欢迎通过问卷提交使用体验、建议和问题反馈。
+        </p>
+      </a>
+
       <div className="rounded-[24px] border border-slate-200 bg-slate-50/90 p-5 shadow-sm">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-slate-400">MVP Status</p>
         <p className="mt-3 text-sm font-semibold text-slate-900">当前可作为前端展示骨架继续迭代</p>
